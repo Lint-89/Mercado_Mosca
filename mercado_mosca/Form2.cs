@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace mercado_mosca
 {
@@ -17,29 +18,46 @@ namespace mercado_mosca
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void ButtonEnableOff()
         {
-
+            if (textBox1.TextLength > 0 && textBox2.TextLength > 0 && textBox3.TextLength > 0) button1.Enabled = true;
+            else button1.Enabled = false;
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            ButtonEnableOff();
+        }
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            ButtonEnableOff();
+        }
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            ButtonEnableOff();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 homeForm = new Form1();
-            homeForm.Show();
-            this.Hide();
+            string[] linhas = File.ReadAllLines("FuncionariosAutorizados.txt");
+            foreach (string linha in linhas)
+            {
+                string[] dados = linha.Split(';');
+                if (dados.Length == 3 && dados[0] == textBox1.Text && dados[1] == textBox2.Text && dados[3] == textBox3.Text)
+                {
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    Form1 homeForm = new Form1();
+                    homeForm.Show();
+                    this.Hide();
+                    break;
+
+                }
+                label3.Text = "O nome, CPF ou senha inseridos estão errados. Por favor, tente novamente";
+            }
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
             Form3 homeForm = new Form3();
             homeForm.Show();

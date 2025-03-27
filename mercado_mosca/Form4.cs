@@ -17,13 +17,13 @@ namespace mercado_mosca
         public Form4()
         {
             InitializeComponent();
-            btnProduto1.Tag = new Produto { Nome = "Produto 1", PrecoUnitario = 10.00m };
+          /*  btnProduto1.Tag = new Produto { Nome = "Produto 1", PrecoUnitario = 10.00m };
             btnProduto2.Tag = new Produto { Nome = "Produto 2", PrecoUnitario = 20.00m };
             btnProduto3.Tag = new Produto { Nome = "Produto 3", PrecoUnitario = 30.00m };
 
             btnProduto1.Click += btnAdicionarAoCarrinho_Click;
             btnProduto2.Click += btnAdicionarAoCarrinho_Click;
-            btnProduto3.Click += btnAdicionarAoCarrinho_Click;
+            btnProduto3.Click += btnAdicionarAoCarrinho_Click; */
         }
 
         private void button7_Click(object sender, EventArgs e)
