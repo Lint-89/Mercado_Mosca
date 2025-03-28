@@ -41,6 +41,26 @@ namespace mercado_mosca
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string[] linhas = File.ReadAllLines("clienteInfo.txt");
+            foreach (string linha in linhas)
+            {
+               string[] dados = linha.Split(';');
+                if (dados.Length == 7 && dados[0] == textBox1.Text && dados[1] == textBox2.Text && dados[2] == textBox3.Text)
+                {
+                   textBox1.Text = "";
+                   textBox2.Text = "";
+                   textBox3.Text = "";
+                   label6.Text = "Login Feito com sucesso";
+                   Form1 homeForm = new Form1();
+                   homeForm.Show();
+                   this.Hide();
+
+                } else label6.Text = "O nome, CPF ou senha inseridos estão errados. Por favor, tente novamente";
+            }
+        }
+      
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+
             Form1 homeForm = new Form1();
             homeForm.Show();
             this.Hide();
@@ -49,7 +69,14 @@ namespace mercado_mosca
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
+            Form3 homeForm = new Form3();
+            homeForm.Show();
+            this.Hide();
+        }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox3.UseSystemPasswordChar = !textBox3.UseSystemPasswordChar;
         }
     }
 }
