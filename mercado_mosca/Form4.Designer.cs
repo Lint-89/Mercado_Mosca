@@ -61,7 +61,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(322, 218);
+            this.label10.Location = new System.Drawing.Point(332, 218);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(130, 13);
             this.label10.TabIndex = 28;
@@ -79,7 +79,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(327, 88);
+            this.label2.Location = new System.Drawing.Point(332, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 13);
             this.label2.TabIndex = 26;
@@ -111,9 +111,9 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::mercado_mosca.Properties.Resources.kit_c_;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(330, 12);
+            this.pictureBox6.Location = new System.Drawing.Point(335, 12);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(117, 73);
+            this.pictureBox6.Size = new System.Drawing.Size(123, 73);
             this.pictureBox6.TabIndex = 25;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -123,7 +123,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = global::mercado_mosca.Properties.Resources.samambaia;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(324, 133);
+            this.pictureBox5.Location = new System.Drawing.Point(335, 133);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(123, 82);
             this.pictureBox5.TabIndex = 24;
@@ -147,9 +147,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::mercado_mosca.Properties.Resources.fone_gato;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(319, 260);
+            this.pictureBox2.Location = new System.Drawing.Point(335, 258);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(143, 85);
+            this.pictureBox2.Size = new System.Drawing.Size(127, 87);
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -166,7 +166,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(675, 395);
+            this.button7.Location = new System.Drawing.Point(682, 395);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(24, 23);
             this.button7.TabIndex = 39;
@@ -177,7 +177,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(705, 400);
+            this.label1.Location = new System.Drawing.Point(708, 400);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 38;
