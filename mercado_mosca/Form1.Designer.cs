@@ -34,28 +34,22 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bt1 = new System.Windows.Forms.Button();
-            this.bt4 = new System.Windows.Forms.Button();
-            this.bt2 = new System.Windows.Forms.Button();
-            this.bt5 = new System.Windows.Forms.Button();
-            this.bt6 = new System.Windows.Forms.Button();
-            this.bt3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -113,6 +107,35 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Bola com memória por R$8!";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(692, 372);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Pág 1/2";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(744, 367);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(24, 23);
+            this.button7.TabIndex = 31;
+            this.button7.Text = "->";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::mercado_mosca.Properties.Resources.teste2;
+            this.pictureBox2.Location = new System.Drawing.Point(-41, -49);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(332, 490);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
@@ -123,6 +146,7 @@
             this.pictureBox11.Size = new System.Drawing.Size(86, 73);
             this.pictureBox11.TabIndex = 10;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox10
             // 
@@ -134,6 +158,7 @@
             this.pictureBox10.Size = new System.Drawing.Size(102, 73);
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox9
             // 
@@ -145,6 +170,7 @@
             this.pictureBox9.Size = new System.Drawing.Size(86, 73);
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox8
             // 
@@ -168,6 +194,7 @@
             this.pictureBox7.Size = new System.Drawing.Size(94, 73);
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox1
             // 
@@ -179,90 +206,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(108, 73);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::mercado_mosca.Properties.Resources.teste2;
-            this.pictureBox2.Location = new System.Drawing.Point(-41, -49);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(332, 490);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
-            // 
-            // bt1
-            // 
-            this.bt1.Location = new System.Drawing.Point(300, 104);
-            this.bt1.Name = "bt1";
-            this.bt1.Size = new System.Drawing.Size(116, 23);
-            this.bt1.TabIndex = 24;
-            this.bt1.Text = "Adicionar ao carrinho";
-            this.bt1.UseVisualStyleBackColor = true;
-            this.bt1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // bt4
-            // 
-            this.bt4.Location = new System.Drawing.Point(578, 104);
-            this.bt4.Name = "bt4";
-            this.bt4.Size = new System.Drawing.Size(116, 23);
-            this.bt4.TabIndex = 25;
-            this.bt4.Text = "Adicionar ao carrinho";
-            this.bt4.UseVisualStyleBackColor = true;
-            // 
-            // bt2
-            // 
-            this.bt2.Location = new System.Drawing.Point(297, 225);
-            this.bt2.Name = "bt2";
-            this.bt2.Size = new System.Drawing.Size(116, 23);
-            this.bt2.TabIndex = 26;
-            this.bt2.Text = "Adicionar ao carrinho";
-            this.bt2.UseVisualStyleBackColor = true;
-            // 
-            // bt5
-            // 
-            this.bt5.Location = new System.Drawing.Point(578, 225);
-            this.bt5.Name = "bt5";
-            this.bt5.Size = new System.Drawing.Size(116, 23);
-            this.bt5.TabIndex = 27;
-            this.bt5.Text = "Adicionar ao carrinho";
-            this.bt5.UseVisualStyleBackColor = true;
-            // 
-            // bt6
-            // 
-            this.bt6.Location = new System.Drawing.Point(578, 346);
-            this.bt6.Name = "bt6";
-            this.bt6.Size = new System.Drawing.Size(116, 23);
-            this.bt6.TabIndex = 28;
-            this.bt6.Text = "Adicionar ao carrinho";
-            this.bt6.UseVisualStyleBackColor = true;
-            // 
-            // bt3
-            // 
-            this.bt3.Location = new System.Drawing.Point(300, 346);
-            this.bt3.Name = "bt3";
-            this.bt3.Size = new System.Drawing.Size(116, 23);
-            this.bt3.TabIndex = 29;
-            this.bt3.Text = "Adicionar ao carrinho";
-            this.bt3.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(692, 372);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Pág 1/2";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(744, 367);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(24, 23);
-            this.button7.TabIndex = 31;
-            this.button7.Text = "->";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
@@ -272,12 +216,6 @@
             this.ClientSize = new System.Drawing.Size(768, 392);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.bt3);
-            this.Controls.Add(this.bt6);
-            this.Controls.Add(this.bt5);
-            this.Controls.Add(this.bt2);
-            this.Controls.Add(this.bt4);
-            this.Controls.Add(this.bt1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -293,13 +231,13 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,12 +258,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button bt1;
-        private System.Windows.Forms.Button bt4;
-        private System.Windows.Forms.Button bt2;
-        private System.Windows.Forms.Button bt5;
-        private System.Windows.Forms.Button bt6;
-        private System.Windows.Forms.Button bt3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button7;
     }

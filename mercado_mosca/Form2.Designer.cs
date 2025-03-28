@@ -36,7 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -58,6 +58,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(209, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // textBox2
             // 
@@ -115,16 +116,16 @@
             this.checkBox1.Text = "Mostrar senha";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // bt1
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(533, 327);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bt1.Enabled = false;
+            this.bt1.Location = new System.Drawing.Point(533, 327);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(120, 23);
+            this.bt1.TabIndex = 9;
+            this.bt1.Text = "Entrar";
+            this.bt1.UseVisualStyleBackColor = true;
+            this.bt1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -132,7 +133,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(282, 480);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 16);
+            this.label5.Size = new System.Drawing.Size(130, 16);
             this.label5.TabIndex = 10;
             this.label5.Text = "Não tem uma conta?";
             // 
@@ -141,7 +142,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(406, 481);
+            this.label6.Location = new System.Drawing.Point(418, 480);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 15);
             this.label6.TabIndex = 11;
@@ -165,7 +166,7 @@
             this.ClientSize = new System.Drawing.Size(898, 498);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
@@ -192,7 +193,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;

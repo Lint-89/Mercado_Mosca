@@ -13,17 +13,10 @@ namespace mercado_mosca
 {
     public partial class Form4 : Form
     {
-        public static List<Produto> Carrinho = new List<Produto>();
         public Form4()
         {
             InitializeComponent();
-          /*  btnProduto1.Tag = new Produto { Nome = "Produto 1", PrecoUnitario = 10.00m };
-            btnProduto2.Tag = new Produto { Nome = "Produto 2", PrecoUnitario = 20.00m };
-            btnProduto3.Tag = new Produto { Nome = "Produto 3", PrecoUnitario = 30.00m };
-
-            btnProduto1.Click += btnAdicionarAoCarrinho_Click;
-            btnProduto2.Click += btnAdicionarAoCarrinho_Click;
-            btnProduto3.Click += btnAdicionarAoCarrinho_Click; */
+        
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -32,10 +25,39 @@ namespace mercado_mosca
             homeForm.Show();
             this.Hide();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
+            Kit homeForm = new Kit();
+            homeForm.Show();
+            this.Hide();
+        }
 
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Sam homeForm = new Sam();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FoneGato homeForm = new FoneGato();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Oculos homeForm = new Oculos();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Sonic homeForm = new Sonic();
+            homeForm.Show();
+            this.Hide();
         }
     }
 }

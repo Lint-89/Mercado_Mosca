@@ -17,14 +17,40 @@ namespace mercado_mosca
             InitializeComponent();
         }
 
-        public class Produto
+        public void AdicionarProdutoNaListBox(string nomeProduto, int quantidade, decimal precoUnitario)
         {
-            public string Nome { get; set; }
-            public int Quantidade { get; set; }
-            public decimal PrecoUnitario { get; set; }
+            try
+            {
+                string produto = $"{nomeProduto} - {quantidade}x - Total: R$ {quantidade * precoUnitario:F2}";
 
-            public decimal PrecoTotal => Quantidade * PrecoUnitario;
+                bool produtoExistente = false;
+                for (int i = 0; i < listBoxProdutos.Items.Count; i++)
+                {
+                    string item = listBoxProdutos.Items[i].ToString();
+                    if (item.Contains(nomeProduto))
+                    {
+                        string[] partes = item.Split('-');
+                        int quantidadeAtual = int.Parse(partes[1].Trim().Split('x')[0]);
+
+                        int novaQuantidade = quantidadeAtual + quantidade;
+                        decimal precoTotal = novaQuantidade * precoUnitario;
+
+                        listBoxProdutos.Items[i] = $"{nomeProduto} - {novaQuantidade}x - Total: R$ {precoTotal:F2}";
+                        produtoExistente = true;
+                        break;
+                    }
+                }
+                if (!produtoExistente)
+                {
+                    listBoxProdutos.Items.Add(produto);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro: {ex.Message}");
+            }
         }
-    }
-    }
 
+    }
+}
+    

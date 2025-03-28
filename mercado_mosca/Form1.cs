@@ -19,7 +19,9 @@ namespace mercado_mosca
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-
+            Camera homeForm = new Camera();
+            homeForm.Show();
+            this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -29,9 +31,39 @@ namespace mercado_mosca
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
+            Monitor homeForm = new Monitor();
+            homeForm.Show();
+            this.Hide();
+        }
 
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Bola homeForm = new Bola();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            Ar homeForm = new Ar();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            FoneHz homeForm = new FoneHz();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Sabre homeForm = new Sabre();
+            homeForm.Show();
+            this.Hide();
         }
     }
 }

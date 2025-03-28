@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ar.Designer.cs">
+      <DependentUpon>Ar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bola.Designer.cs">
+      <DependentUpon>Bola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Camera.Designer.cs">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoneGato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoneGato.Designer.cs">
+      <DependentUpon>FoneGato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoneHz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoneHz.Designer.cs">
+      <DependentUpon>FoneHz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,8 +107,59 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kit.Designer.cs">
+      <DependentUpon>Kit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitor.Designer.cs">
+      <DependentUpon>Monitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oculos.Designer.cs">
+      <DependentUpon>Oculos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sabre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sabre.Designer.cs">
+      <DependentUpon>Sabre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sam.Designer.cs">
+      <DependentUpon>Sam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sonic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sonic.Designer.cs">
+      <DependentUpon>Sonic.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ar.resx">
+      <DependentUpon>Ar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bola.resx">
+      <DependentUpon>Bola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Camera.resx">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoneGato.resx">
+      <DependentUpon>FoneGato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoneHz.resx">
+      <DependentUpon>FoneHz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +172,18 @@
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kit.resx">
+      <DependentUpon>Kit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitor.resx">
+      <DependentUpon>Monitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oculos.resx">
+      <DependentUpon>Oculos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -100,6 +194,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sabre.resx">
+      <DependentUpon>Sabre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sam.resx">
+      <DependentUpon>Sam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sonic.resx">
+      <DependentUpon>Sonic.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -157,6 +260,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\teste2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teste3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,8 +20,8 @@ namespace mercado_mosca
 
         public void ButtonEnableOff()
         {
-            if (textBox1.TextLength > 0 && textBox2.TextLength > 0 && textBox3.TextLength > 0) button1.Enabled = true;
-            else button1.Enabled = false;
+            if (textBox1.TextLength > 0 && textBox2.TextLength > 0 && textBox3.TextLength > 0) bt1.Enabled = true;
+            else bt1.Enabled = false;
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -38,30 +38,29 @@ namespace mercado_mosca
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string[] linhas = File.ReadAllLines("FuncionariosAutorizados.txt");
-            foreach (string linha in linhas)
-            {
-                string[] dados = linha.Split(';');
-                if (dados.Length == 3 && dados[0] == textBox1.Text && dados[1] == textBox2.Text && dados[3] == textBox3.Text)
-                {
-                    textBox1.Text = "";
-                    textBox2.Text = "";
-                    textBox3.Text = "";
-                    Form1 homeForm = new Form1();
-                    homeForm.Show();
-                    this.Hide();
-                    break;
+            //string[] linhas = File.ReadAllLines("FuncionariosAutorizados.txt");
+           // foreach (string linha in linhas)
+         //   {
+             //   string[] dados = linha.Split(';');
+              //  if (dados.Length == 3 && dados[0] == textBox1.Text && dados[1] == textBox2.Text && dados[3] == textBox3.Text)
+               // {
+               //     textBox1.Text = "";
+               //     textBox2.Text = "";
+               //    textBox3.Text = "";
+                 Form1 homeForm = new Form1();
+                 homeForm.Show();
+                   this.Hide();
+            //break;
 
                 }
-                label3.Text = "O nome, CPF ou senha inseridos estão errados. Por favor, tente novamente";
-            }
-        }
+              //  label3.Text = "O nome, CPF ou senha inseridos estão errados. Por favor, tente novamente";
+           // }
+      //  }
+      
 
-        private void label6_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-            Form3 homeForm = new Form3();
-            homeForm.Show();
-            this.Hide();
+
         }
     }
 }
