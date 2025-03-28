@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnRemover = new System.Windows.Forms.Button();
+            this.txtPrecoTotal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,12 +91,30 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(442, 331);
+            this.button2.Location = new System.Drawing.Point(433, 357);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 23);
             this.button2.TabIndex = 35;
             this.button2.Text = "Finalizar compra";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnRemover
+            // 
+            this.btnRemover.Location = new System.Drawing.Point(572, 78);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(115, 23);
+            this.btnRemover.TabIndex = 36;
+            this.btnRemover.Text = "Remover 1 unidade";
+            this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click_1);
+            // 
+            // txtPrecoTotal
+            // 
+            this.txtPrecoTotal.Location = new System.Drawing.Point(410, 331);
+            this.txtPrecoTotal.Name = "txtPrecoTotal";
+            this.txtPrecoTotal.Size = new System.Drawing.Size(159, 20);
+            this.txtPrecoTotal.TabIndex = 38;
             // 
             // Form5
             // 
@@ -102,6 +122,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtPrecoTotal);
+            this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
@@ -124,5 +146,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRemover;
+        private System.Windows.Forms.TextBox txtPrecoTotal;
     }
 }

@@ -39,8 +39,7 @@ namespace mercado_mosca
         }
         private void TrocarImagem()
         {
-            if (imagens.Count > 0)
-                pictureBox1.Image = imagens[random.Next(imagens.Count)];
+           
         }
 
         private void tbq_TextChanged(object sender, EventArgs e)
