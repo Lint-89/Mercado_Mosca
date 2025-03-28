@@ -1,23 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace mercado_mosca
 {
-    public partial class Monitor : Form
+    public partial class Monitor : FormBase
     {
-
         private Form5 form5;
 
         public Monitor()
         {
             InitializeComponent();
+            ExibirImagemAleatoriaSeNecessario();
 
             form5 = Application.OpenForms["Form5"] as Form5;
 
@@ -25,6 +18,7 @@ namespace mercado_mosca
             {
                 form5 = new Form5();
                 form5.Show();
+                form5.Hide();
             }
         }
 
@@ -34,13 +28,8 @@ namespace mercado_mosca
             {
                 form5.Show();
             }
-           
+
             this.Hide();
-        }
-        private void TrocarImagem()
-        {
-            if (imagens.Count > 0)
-                pictureBox1.Image = imagens[random.Next(imagens.Count)];
         }
 
         private void tbq_TextChanged(object sender, EventArgs e)
@@ -56,17 +45,16 @@ namespace mercado_mosca
 
         private void bt_Click(object sender, EventArgs e)
         {
-            string nomeProduto = "Monitor quebrado"; 
-            int quantidade = int.Parse(tbq.Text);  
-            decimal precoUnitario = 350.00m; 
+            string nomeProduto = "Monitor quebrado";
+            int quantidade = int.Parse(tbq.Text);
+            decimal precoUnitario = 350.00m;
             decimal precoTotal = quantidade * precoUnitario;
 
-         
+
             Form5 form5 = Application.OpenForms["Form5"] as Form5;
 
             if (form5 != null)
             {
-     
                 form5.AdicionarProdutoNaListBox(nomeProduto, quantidade, precoUnitario);
             }
             else
@@ -84,8 +72,7 @@ namespace mercado_mosca
 
         private void Monitor_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
-
 }

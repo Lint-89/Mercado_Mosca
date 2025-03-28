@@ -10,20 +10,21 @@ using System.Windows.Forms;
 
 namespace mercado_mosca
 {
-    public partial class FoneGato : Form
+    public partial class FoneGato : FormBase
     {
         private Form5 form5;
 
         public FoneGato()
         {
             InitializeComponent();
-
+            ExibirImagemAleatoriaSeNecessario();
             form5 = Application.OpenForms["Form5"] as Form5;
 
             if (form5 == null)
             {
                 form5 = new Form5();
                 form5.Show();
+                form5.Hide();
             }
         }
 
