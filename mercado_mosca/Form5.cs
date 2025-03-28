@@ -108,9 +108,10 @@ namespace mercado_mosca
                 return;
             }
 
-            string precoTotal = txtPrecoTotal.Text; // Obtém o preço total já formatado
+            string precoTotal = txtPrecoTotal.Text; 
             Recibo reciboForm = new Recibo(listBoxProdutos.Items, precoTotal);
             reciboForm.Show();
+            this.Hide();
         }
     }
 }

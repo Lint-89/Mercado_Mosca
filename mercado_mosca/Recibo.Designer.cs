@@ -48,6 +48,7 @@
             this.btnFechar.TabIndex = 0;
             this.btnFechar.Text = "<-";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
             // 
             // listBoxRecibo
             // 

@@ -11,12 +11,12 @@ using static mercado_mosca.Form5;
 
 namespace mercado_mosca
 {
-    public partial class Form4 : Form
+    public partial class Form4 : FormBase
     {
         public Form4()
         {
             InitializeComponent();
-        
+            ExibirImagemAleatoriaSeNecessario();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -57,6 +57,23 @@ namespace mercado_mosca
         {
             Sonic homeForm = new Sonic();
             homeForm.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = Application.OpenForms["Form5"] as Form5;
+
+            if (form5 == null)
+            {
+                form5 = new Form5();
+                form5.Show();
+            }
+            else
+            {
+                form5.Show();
+            }
+
             this.Hide();
         }
     }

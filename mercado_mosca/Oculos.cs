@@ -10,19 +10,20 @@ using System.Windows.Forms;
 
 namespace mercado_mosca
 {
-    public partial class Oculos : Form
+    public partial class Oculos : FormBase
     {
         private Form5 form5;
         public Oculos()
         {
             InitializeComponent();
-
+            ExibirImagemAleatoriaSeNecessario();
             form5 = Application.OpenForms["Form5"] as Form5;
 
             if (form5 == null)
             {
                 form5 = new Form5();
                 form5.Show();
+                form5.Hide();
             }
         }
 

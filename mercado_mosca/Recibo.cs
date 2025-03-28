@@ -32,7 +32,7 @@ namespace mercado_mosca
 
         private void listBoxRecibo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Evento da ListBox, pode ser usado para futuras interações.
+           
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace mercado_mosca
                 using (StreamWriter writer = new StreamWriter(caminhoArquivo))
                 {
                     writer.WriteLine("===== RECIBO =====");
-                    writer.WriteLine("Itens Comprados:");
+                    writer.WriteLine("Produtos comprados:");
 
                     foreach (var item in listBoxRecibo.Items)
                     {
@@ -108,6 +108,13 @@ namespace mercado_mosca
                     }
                 }
             }
+        }
+
+        private void btnFechar_Click_1(object sender, EventArgs e)
+        {
+            Form2 homeForm = new Form2();
+            homeForm.Show();
+            this.Hide();
         }
     }
 }

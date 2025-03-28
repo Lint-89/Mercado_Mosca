@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace mercado_mosca
 {
-    public partial class Form1 : Form
+    public partial class Form1 : FormBase
     {
         public Form1()
         {
             InitializeComponent();
+            ExibirImagemAleatoriaSeNecessario();
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
@@ -63,6 +64,21 @@ namespace mercado_mosca
         {
             Sabre homeForm = new Sabre();
             homeForm.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = Application.OpenForms["Form5"] as Form5;
+            if (form5 == null)
+            {
+                form5 = new Form5();
+                form5.Show();
+            }
+            else
+            {
+                form5.Show();
+            }
             this.Hide();
         }
     }
