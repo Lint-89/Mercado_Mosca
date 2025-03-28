@@ -63,6 +63,56 @@ namespace mercado_mosca.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anuncio1 {
+            get {
+                object obj = ResourceManager.GetObject("anuncio1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap anuncio2 {
+            get {
+                object obj = ResourceManager.GetObject("anuncio2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap anuncio3 {
+            get {
+                object obj = ResourceManager.GetObject("anuncio3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap anuncio4 {
+            get {
+                object obj = ResourceManager.GetObject("anuncio4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap anuncio5 {
+            get {
+                object obj = ResourceManager.GetObject("anuncio5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ar_plastico {
             get {
                 object obj = ResourceManager.GetObject("ar_plastico", resourceCulture);
@@ -216,6 +266,16 @@ namespace mercado_mosca.Properties {
         internal static System.Drawing.Bitmap teste3 {
             get {
                 object obj = ResourceManager.GetObject("teste3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teste4 {
+            get {
+                object obj = ResourceManager.GetObject("teste4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

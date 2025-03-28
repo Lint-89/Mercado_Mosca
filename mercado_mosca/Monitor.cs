@@ -12,6 +12,7 @@ namespace mercado_mosca
 {
     public partial class Monitor : Form
     {
+
         private Form5 form5;
 
         public Monitor()
@@ -35,6 +36,11 @@ namespace mercado_mosca
             }
            
             this.Hide();
+        }
+        private void TrocarImagem()
+        {
+            if (imagens.Count > 0)
+                pictureBox1.Image = imagens[random.Next(imagens.Count)];
         }
 
         private void tbq_TextChanged(object sender, EventArgs e)
