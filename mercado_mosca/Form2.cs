@@ -60,19 +60,14 @@ namespace mercado_mosca
         }
       
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-
-            Form1 homeForm = new Form1();
-            homeForm.Show();
-            this.Hide();
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
+        { 
             Form3 homeForm = new Form3();
             homeForm.Show();
             this.Hide();
+
         }
+
+       
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {

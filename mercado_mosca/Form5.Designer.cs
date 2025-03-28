@@ -113,6 +113,7 @@
             // 
             this.txtPrecoTotal.Location = new System.Drawing.Point(410, 331);
             this.txtPrecoTotal.Name = "txtPrecoTotal";
+            this.txtPrecoTotal.ReadOnly = true;
             this.txtPrecoTotal.Size = new System.Drawing.Size(159, 20);
             this.txtPrecoTotal.TabIndex = 38;
             // 

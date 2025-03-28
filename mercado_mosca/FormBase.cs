@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mercado_mosca.Properties;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -19,7 +20,7 @@ namespace mercado_mosca
             CarregarImagensDosResources();  
             InicializarTimer();
         }
-        private void CarregarImagensDosResources()
+        public void CarregarImagensDosResources()
         {
             imagens = new Image[]
             {
@@ -73,6 +74,31 @@ namespace mercado_mosca
             if (imagemMaior != null)
             {
                 imagemMaior.Visible = false;
+                if (imagemMaior.Image == Properties.Resources.anuncio1)
+                {
+                    FoneGato homeForm = new FoneGato();
+                    homeForm.Show();
+                    this.Hide();
+                }
+                if(imagemMaior.Image == Properties.Resources.anuncio2)
+                {
+                    Oculos homeForm = new Oculos();
+                    homeForm.Show();
+                    this.Hide();
+                }
+                if (imagemMaior.Image == Properties.Resources.anuncio3)
+                {
+                    Form4 homeForm = new Form4();
+                    homeForm.Show();
+                    this.Hide();
+                }
+                if (imagemMaior.Image == Properties.Resources.anuncio4)
+                {
+                    Form5 homeForm = new Form5();
+                    homeForm.Show();
+                    this.Hide();
+                }
+               
             }
             ReiniciarTimer(); 
         }
