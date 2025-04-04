@@ -78,7 +78,7 @@
             // 
             this.lbq.AutoSize = true;
             this.lbq.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbq.Location = new System.Drawing.Point(401, 291);
+            this.lbq.Location = new System.Drawing.Point(401, 275);
             this.lbq.Name = "lbq";
             this.lbq.Size = new System.Drawing.Size(96, 20);
             this.lbq.TabIndex = 21;
@@ -87,7 +87,7 @@
             // 
             // tbq
             // 
-            this.tbq.Location = new System.Drawing.Point(503, 291);
+            this.tbq.Location = new System.Drawing.Point(503, 277);
             this.tbq.Name = "tbq";
             this.tbq.Size = new System.Drawing.Size(143, 20);
             this.tbq.TabIndex = 22;
@@ -97,7 +97,7 @@
             // 
             this.lbp.AutoSize = true;
             this.lbp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbp.Location = new System.Drawing.Point(401, 321);
+            this.lbp.Location = new System.Drawing.Point(401, 305);
             this.lbp.Name = "lbp";
             this.lbp.Size = new System.Drawing.Size(54, 20);
             this.lbp.TabIndex = 23;
@@ -106,15 +106,16 @@
             // 
             // tbp
             // 
-            this.tbp.Location = new System.Drawing.Point(503, 323);
+            this.tbp.Location = new System.Drawing.Point(503, 307);
             this.tbp.Name = "tbp";
             this.tbp.ReadOnly = true;
             this.tbp.Size = new System.Drawing.Size(143, 20);
             this.tbp.TabIndex = 24;
+            this.tbp.TextChanged += new System.EventHandler(this.tbp_TextChanged);
             // 
             // bt
             // 
-            this.bt.Location = new System.Drawing.Point(451, 364);
+            this.bt.Location = new System.Drawing.Point(455, 347);
             this.bt.Name = "bt";
             this.bt.Size = new System.Drawing.Size(128, 30);
             this.bt.TabIndex = 25;

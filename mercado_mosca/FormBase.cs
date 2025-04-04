@@ -78,13 +78,11 @@ namespace mercado_mosca
                 switch (imagemIndex)
                 {
                     case 0:
-                        // Se o índice for 0, abre o form FoneGato
                         FoneGato formFoneGato = new FoneGato();
                         formFoneGato.Show();
                         this.Hide();
                         break;
                     case 1:
-                        // Se o índice for 1, abre o form Oculos
                         Oculos formOculos = new Oculos();
                         formOculos.Show();
                         this.Hide();
