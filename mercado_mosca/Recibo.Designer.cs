@@ -135,6 +135,7 @@
             this.Controls.Add(this.lblPrecoTotal);
             this.Controls.Add(this.listBoxRecibo);
             this.Controls.Add(this.btnFechar);
+            this.MaximizeBox = false;
             this.Name = "Recibo";
             this.Text = "Recibo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

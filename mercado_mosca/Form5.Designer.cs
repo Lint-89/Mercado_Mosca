@@ -144,6 +144,7 @@
             this.Controls.Add(this.lbq);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBoxProdutos);
+            this.MaximizeBox = false;
             this.Name = "Form5";
             this.Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

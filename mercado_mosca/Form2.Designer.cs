@@ -188,6 +188,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "Tela Inicial";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

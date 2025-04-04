@@ -243,6 +243,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form3";
             this.Text = "Cadastre-se";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -170,6 +170,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "Oculos";
             this.Text = "Oculos";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

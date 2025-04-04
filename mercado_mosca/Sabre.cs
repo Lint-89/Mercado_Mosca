@@ -126,5 +126,10 @@ namespace mercado_mosca
 
             this.Hide();
         }
+
+        private void Sabre_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

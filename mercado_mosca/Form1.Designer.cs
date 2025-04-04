@@ -241,6 +241,7 @@
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

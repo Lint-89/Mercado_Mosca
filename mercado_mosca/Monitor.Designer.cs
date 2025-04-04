@@ -171,6 +171,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "Monitor";
             this.Text = "Monitor";
             this.Load += new System.EventHandler(this.Monitor_Load);
