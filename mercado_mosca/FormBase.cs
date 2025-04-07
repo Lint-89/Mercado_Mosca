@@ -34,7 +34,7 @@ namespace mercado_mosca
         private void InicializarTimer()
         {
             timer = new Timer();
-            timer.Interval = 20000; 
+            timer.Interval = 15000; 
             timer.Tick += Timer_Tick;
         }
 

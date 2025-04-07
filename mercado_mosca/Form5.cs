@@ -134,7 +134,6 @@ namespace mercado_mosca
                 int quantidadeAtual = carrinho[nomeProduto].quantidade;
                 decimal precoUnitario = carrinho[nomeProduto].precoUnitario;
 
-                // Se a quantidade estiver negativa ou zerada e não tiver valor inserido na caixa de remoção
                 if ((quantidadeAtual <= 0) && string.IsNullOrWhiteSpace(txtRemoverQtd.Text))
                 {
                     carrinho.Remove(nomeProduto);

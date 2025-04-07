@@ -20,8 +20,16 @@ namespace mercado_mosca
             textBox2.KeyPress += textBox2_KeyPress;
             textBox2.TextChanged += textBox2_TextChanged;
             textBox1.KeyPress += textBox1_KeyPress;
+            textBox7.KeyPress += textBox7_KeyPress;
         }
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+            private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
             {
@@ -97,6 +105,11 @@ namespace mercado_mosca
 
             textBox2.SelectionStart = textBox2.Text.Length;
             textBox2.SelectionLength = 0;
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
